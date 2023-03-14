@@ -1,0 +1,145 @@
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: PoppinsLight;
+    src: url('/assets/fonts/Poppins/Poppins-Light.ttf'); 
+  }
+  @font-face {
+    font-family: PoppinsRegular;
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: PoppinsMedium;
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf');
+  }
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('/assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+  }
+  @font-face {
+    font-family: RobotoLight;
+    src: url('/assets/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf'); 
+  }
+  @font-face {
+    font-family: RobotoRegular;
+    src: url('/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf'); 
+  }
+
+
+
+:root{
+    /*font-size : 32px - 1rem*/
+    --title-text: 4.5rem;
+    --sm-title-text: 2.55rem;
+    --paragraph-text: 0.960rem;
+    --first-bgcolor: rgb(0, 10, 25);
+
+
+    --first-bold-font:  PoppinsSemiBold;
+    --first-regular-font: PoppinsRegular;
+    --first-light-font: PoppinsLight;
+    --second-bold-font: RobotoBold;
+    --second-regular-font: RobotoRegular;
+    --second-light-font: RobotoLight;
+
+    --mr-bt: 1rem 0;
+
+    --word-spacing:0.5px;
+    --letter-spacing:1.0px;
+}
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.site_header{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--first-bgcolor);
+    position: relative;
+}
+.site_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 4%;
+}
+.nav_links_div{
+    flex: 1;
+    text-align: right;
+}
+
+.link_list .link_list_item{
+    display: inline-block;
+    margin: 8px 17px;    
+}
+.link_list_item a{
+    color: aqua;
+    display: block;
+    font-family: var(--second-regular-font);
+    padding: 8px 12px;
+}
+.resume{
+    border: 2px solid aqua;
+    border-radius: 4px/2px;
+}
+.text_box{
+    position: absolute;
+    top:60%;
+    width: 80%;
+    left: 50%;
+    margin-left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+.text_box h2{
+color:lightgrey;
+font-size: var(--sm-title-text);
+font-family: var(--first-bold-font);
+}
+.text_box h1{
+color:mistyrose;
+font-size: var(--title-text);
+font-family: var(--first-bold-font);
+}
+.text_box .first_text{
+color: aqua;
+font-size: var(--paragraph-text);
+font-family: var(--second-regular-font);
+}
+
+.fourth_text{
+color: darkgray;
+font-family: var(--second-light-font);
+width: 60%;
+letter-spacing: var(--letter-spacing);
+
+margin: var(--mr-bt);
+
+}
+.check{
+    color: aqua;
+    display: block;
+    width: 14%;
+    font-family: var(--second-regular-font);
+    padding: 14px 16px;
+    border: 2px solid aqua;
+    border-radius: 4px/2px;
+    text-align: center;
+    margin: var(--mr-bt);
+
+}
