@@ -334,6 +334,9 @@ margin: var(--mr-bt);
     .text_box h1, .text_box h2{
         font-size: 1.5rem;
     }
+    .fourth_text{
+        width: 100%;
+    }
     .check{
         width: 50%;
     }
